@@ -30,7 +30,7 @@ POST:
 curl -X POST "https://rnc.megaplus.com.do/api/consulta" -H "Content-Type: application/json" -d '{"rnc": "131996035"}'
 
 ### Ejemplo de respuesta (Éxito)
-
+```bash
 {
   "actividad\_economica": "CRÍA DE ANIMALES Y OBTENCIÓN DE PRODUCTOS DE ORIGEN ANIMAL, N.C.P. (INCL. CIERVO, CONEJO EXCEPTO PARA PELO, GATO, LOMBRIZ PÁJARO,",
   "administracion\_local": "ADM LOCAL LA VEGA",

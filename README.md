@@ -68,9 +68,9 @@ Devuelto cuando el cuerpo de la solicitud (JSON) o los parámetros son inválido
 ```bash
 {
   "error": true,
-  "codigo\_http": 400,
+  "codigo_http": 400,
   "mensaje": "solicitud incorrecta: el campo 'rnc' es obligatorio y debe tener 9 o 11 dígitos.",
-  "rnc\_consultado": null
+  "rnc_consultado": null
 }
 ```
 
@@ -83,9 +83,9 @@ Devuelto cuando el RNC/Cédula es válido pero no se encuentra inscrito como con
 ```bash
 {
   "error": true,
-  "codigo\_http": 404,
+  "codigo_http": 404,
   "mensaje": "el rnc/cedula consultado no se encuentra inscrito como contribuyente.",
-  "rnc\_consultado": "1305035590"
+  "rnc_consultado": "1305035590"
 }
 ```
 
@@ -98,9 +98,9 @@ Devuelto cuando hay un error inesperado en el servidor o al consultar la DGII.
 ```bash
 {
   "error": true,
-  "codigo\_http": 500,
+  "codigo_http": 500,
   "mensaje": "error interno del servidor. ha ocurrido un fallo inesperado.",
-  "rnc\_consultado": "1305035590"
+  "rnc_consultado": "1305035590"
 }
 ```
 

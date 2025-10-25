@@ -116,6 +116,6 @@ Accede a [Swagger UI](https://rnc.megaplus.com.do/apidocs/) para probar la API d
 
 ### Pagina Web Oficial
 
-Accede a (https://rnc.megaplus.com.do/).
+https://rnc.megaplus.com.do/
 
 © 2025 [nsmdeveloper](https://discord.gg/dfXXM42yM3). Todos los derechos reservados.

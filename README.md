@@ -10,24 +10,32 @@ Existen dos métodos para consultar:
 
 ### GET
 
+```bash
 GET https://rnc.megaplus.com.do/api/consulta?rnc=131996035
+```
 
 ### POST
 
+```bash
 POST https://rnc.megaplus.com.do/api/consulta
 {
     "rnc": "131996035"
 }
+```
 
 ### Ejemplos con cURL
 
-GET:
+### GET:
 
+```bash
 curl -X GET "https://rnc.megaplus.com.do/api/consulta?rnc=131996035"
+```
 
-POST:
+### POST:
 
+```bash
 curl -X POST "https://rnc.megaplus.com.do/api/consulta" -H "Content-Type: application/json" -d '{"rnc": "131996035"}'
+```
 
 ### Ejemplo de respuesta (Éxito)
 ```bash
@@ -44,7 +52,7 @@ curl -X POST "https://rnc.megaplus.com.do/api/consulta" -H "Content-Type: applic
   "regimen\_de\_pagos": "NORMAL",
   "rnc\_consultado": "131996035"
 }
-
+```
 Respuestas de Error (Formato JSON)
 ----------------------------------
 
@@ -52,42 +60,48 @@ Todos los errores, incluidos los de cliente (4xx) y servidor (5xx), se devuelven
 
 ### Error de Negocio (404 Not Found)
 
-Código HTTP: 404
+### Código HTTP: 404
 
 Devuelto cuando el RNC/Cédula es válido pero no se encuentra inscrito como contribuyente.
 
+```bash
 {
   "error": true,
   "codigo\_http": 404,
   "mensaje": "el rnc/cedula consultado no se encuentra inscrito como contribuyente.",
   "rnc\_consultado": "1305035590"
 }
+```
 
 ### Error de Cliente (400 Bad Request)
 
-Código HTTP: 400
+### Código HTTP: 400
 
 Devuelto cuando el cuerpo de la solicitud (JSON) o los parámetros son inválidos o faltan.
 
+```bash
 {
   "error": true,
   "codigo\_http": 400,
   "mensaje": "solicitud incorrecta: el campo 'rnc' es obligatorio y debe tener 9 o 11 dígitos.",
   "rnc\_consultado": null
 }
+```
 
 ### Error de Servidor (500 Internal Server Error)
 
-Código HTTP: 500
+### Código HTTP: 500
 
 Devuelto cuando hay un error inesperado en el servidor o al consultar la DGII.
 
+```bash
 {
   "error": true,
   "codigo\_http": 500,
   "mensaje": "error interno del servidor. ha ocurrido un fallo inesperado.",
   "rnc\_consultado": "1305035590"
 }
+```
 
 ### Documentación Interactiva
 

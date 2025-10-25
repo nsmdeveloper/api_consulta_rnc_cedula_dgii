@@ -58,20 +58,6 @@ Respuestas de Error (Formato JSON)
 
 Todos los errores, incluidos los de cliente (4xx) y servidor (5xx), se devuelven en formato JSON consistente.
 
-### Error de Negocio (404 Not Found)
-
-### Código HTTP: 404
-
-Devuelto cuando el RNC/Cédula es válido pero no se encuentra inscrito como contribuyente.
-
-```bash
-{
-  "error": true,
-  "codigo\_http": 404,
-  "mensaje": "el rnc/cedula consultado no se encuentra inscrito como contribuyente.",
-  "rnc\_consultado": "1305035590"
-}
-```
 
 ### Error de Cliente (400 Bad Request)
 
@@ -85,6 +71,21 @@ Devuelto cuando el cuerpo de la solicitud (JSON) o los parámetros son inválido
   "codigo\_http": 400,
   "mensaje": "solicitud incorrecta: el campo 'rnc' es obligatorio y debe tener 9 o 11 dígitos.",
   "rnc\_consultado": null
+}
+```
+
+### Error de Negocio (404 Not Found)
+
+### Código HTTP: 404
+
+Devuelto cuando el RNC/Cédula es válido pero no se encuentra inscrito como contribuyente.
+
+```bash
+{
+  "error": true,
+  "codigo\_http": 404,
+  "mensaje": "el rnc/cedula consultado no se encuentra inscrito como contribuyente.",
+  "rnc\_consultado": "1305035590"
 }
 ```
 

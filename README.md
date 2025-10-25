@@ -1,7 +1,18 @@
 API Consulta DGII RNC / CEDULA
 ==============================
 
-Consulta en tiempo real los datos oficiales de RNC/Cédula en la DGII República Dominicana
+Consulta en tiempo real los datos oficiales de RNC/Cédula en la DGII República Dominicana.
+
+Esta api esta corriendo en linea 24/7 atravez del dominio https://rnc.megaplus.com.do.
+
+# URL BASE:
+
+```bash
+https://rnc.megaplus.com.do
+```
+
+### OPCIONAL: 
+Si deseas mantener y ejecutar la API localmente o en tu propio Servidor / VPS, puedes seguir las instrucciones de inslacion en [INSTALL.md](https://github.com/nsmdeveloper/api_consulta_rnc_cedula_dgii/blob/master/README.md)
 
 Uso de la API
 -------------

@@ -133,7 +133,7 @@ Haz clic en el siguiente botón para importar la colección directamente en Post
 
 ---
 
-### Comunidad / Soporte
+### 👥 Comunidad / Soporte
 
 Únete a nuestro Discord para soporte y novedades:
 

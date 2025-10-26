@@ -134,7 +134,7 @@ Haz clic en el siguiente botón para importar la colección directamente en Post
 
 Únete a nuestro Discord para soporte y novedades:
 
-[Discord](https://discord.gg/dfXXM42yM3)
+[![Unite Discord Channel](https://img.shields.io/badge/Discord-Join%20Channel-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/dfXXM42yM3)
 
 ### Pagina Web Oficial
 

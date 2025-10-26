@@ -136,8 +136,13 @@ Haz clic en el siguiente botón para importar la colección directamente en Post
 
 [![Unite Discord Channel](https://img.shields.io/badge/Discord-Join%20Channel-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/dfXXM42yM3)
 
-### Pagina Web Oficial
+### 🌍 Página Web Oficial
 
-https://rnc.megaplus.com.do/
+Visita la plataforma en línea:
 
-© 2025 [nsmdeveloper](https://discord.gg/dfXXM42yM3). Todos los derechos reservados.
+[**https://rnc.megaplus.com.do**](https://rnc.megaplus.com.do)
+
+---
+
+© 2025 **[nsmdeveloper](https://www.natiumsofts.nimo.com.do/)** — Todos los derechos reservados.
+

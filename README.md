@@ -114,10 +114,21 @@ Devuelto cuando hay un error inesperado en el servidor o al consultar la DGII.
   "rnc_consultado": "1305035590"
 }
 ```
+### 📘 Documentación Interactiva
 
-### Documentación Interactiva
+Explora y prueba los endpoints de la API directamente desde Swagger UI:
 
-Accede a [Swagger UI](https://rnc.megaplus.com.do/apidocs/) para probar la API directamente.
+[![Abrir en Swagger UI](https://img.shields.io/badge/Swagger%20UI-Open%20Docs-brightgreen?logo=swagger&style=for-the-badge)](https://rnc.megaplus.com.do/apidocs/)
+
+---
+
+
+### 🚀 Probar la API en Postman
+
+Haz clic en el siguiente botón para importar la colección directamente en Postman:
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/26024289-a99cec98-c460-42f2-8535-dd40b625d465?action=collection%2Ffork&collection-url=entityId%3D26024289-a99cec98-c460-42f2-8535-dd40b625d465%26entityType%3Dcollection%26workspaceId%3D713a5e06-8546-4ea6-a9e6-5cc6a6832c66)
+
 
 ### Comunidad / Soporte
 

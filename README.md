@@ -51,17 +51,20 @@ curl -X POST "https://rnc.megaplus.com.do/api/consulta" -H "Content-Type: applic
 ### Ejemplo de respuesta (Éxito)
 ```bash
 {
-  "actividad_economica": "CRÍA DE ANIMALES Y OBTENCIÓN DE PRODUCTOS DE ORIGEN ANIMAL, N.C.P. (INCL. CIERVO, CONEJO EXCEPTO PARA PELO, GATO, LOMBRIZ PÁJARO,",
-  "administracion_local": "ADM LOCAL LA VEGA",
-  "categoria": "",
-  "cedula_rnc": "131-99603-5",
-  "estado": "ACTIVO",
-  "facturador_electronico": "SI",
-  "licencias_de_comercializacion_de_vhm": "N/A",
-  "nombre_comercial": "AGROPECUARIA DELIA & MILO AGRODEMI",
-  "nombre_razon_social": "AGROPECUARIA DELIA & MILO AGRODEMI SRL",
-  "regimen_de_pagos": "NORMAL",
-  "rnc_consultado": "131996035"
+    "error": false,
+    "codigo_http": 200,
+    "mensaje": "Consulta Exitosa",
+    "cedula_rnc": "131-72670-4",
+    "nombre_razon_social": "PETROLINE SRL",
+    "nombre_comercial": "PETROLINE",
+    "categoria": "",
+    "regimen_de_pagos": "NORMAL",
+    "estado": "ACTIVO",
+    "actividad_economica": "VENTA AL POR MAYOR DE COMBUSTIBLES Y LUBRICANTES PARA AUTOMOTORES",
+    "administracion_local": "ADM LOCAL LA FERIA",
+    "facturador_electronico": "NO",
+    "licencias_de_comercializacion_de_vhm": "N/A",
+    "rnc_consultado": "131726704"
 }
 ```
 Respuestas de Error (Formato JSON)

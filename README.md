@@ -12,7 +12,7 @@ https://rnc.megaplus.com.do
 ```
 
 ### OPCIONAL: 
-Si deseas mantener y ejecutar la API localmente o en tu propio Servidor / VPS, puedes seguir las instrucciones de inslacion en [INSTALL.md](https://github.com/nsmdeveloper/api_consulta_rnc_cedula_dgii/blob/master/INSTALL.md)
+Si deseas mantener y ejecutar la API localmente o en tu propio Servidor / VPS, puedes seguir las instrucciones de instalacion en [INSTALL.md](https://github.com/nsmdeveloper/api_consulta_rnc_cedula_dgii/blob/master/INSTALL.md)
 
 Uso de la API
 -------------

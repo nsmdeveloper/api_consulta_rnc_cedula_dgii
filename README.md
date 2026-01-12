@@ -150,5 +150,5 @@ Visita la plataforma en línea:
 
 ---
 
-© ![Dynamic Year]**[nsmdeveloper](https://www.natiumsofts.nimo.com.do/)** — Todos los derechos reservados.
+© 2026 **[nsmdeveloper](https://www.natiumsofts.nimo.com.do/)** — Todos los derechos reservados.
 

@@ -26,6 +26,8 @@ Tipos de Consultas
 
 # Consulta por RNC / Cedula:
 
+####  Obtener la ficha completa de un contribuyente atravez del RNC o la Cedula.
+
 Existen dos métodos para consultar:
 
 ### GET
@@ -79,6 +81,8 @@ curl -X POST "https://rnc.megaplus.com.do/api/consulta" -H "Content-Type: applic
 
 # Consulta por Nombre (Exacto):
 
+####  Ideal para obtener la ficha completa de un contribuyente conociendo su nombre exacto.
+
 Existen dos métodos para consultar:
 
 ### GET
@@ -131,6 +135,8 @@ curl -X POST "https://rnc.megaplus.com.do/api/consulta/nombre" -H "Content-Type:
 ```
 
 # Consulta por Nombres:
+
+####  Devuelve un listado de resultados que coinciden parcialmente con el término buscado. Incluye paginación.
 
 Existen dos métodos para consultar:
 

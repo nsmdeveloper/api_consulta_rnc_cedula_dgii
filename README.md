@@ -17,6 +17,15 @@ Si deseas mantener y ejecutar la API localmente o en tu propio Servidor / VPS, p
 Uso de la API
 -------------
 
+Tipos de Consultas
+-------------------
+
+    * Consulta por RNC / Cedula
+    * Consulta por Nombre (Exacto)
+    * Consulta por Nombres
+
+# Consulta por RNC / Cedula:
+
 Existen dos métodos para consultar:
 
 ### GET
@@ -67,6 +76,179 @@ curl -X POST "https://rnc.megaplus.com.do/api/consulta" -H "Content-Type: applic
   "rnc_consultado": "131996035"
 }
 ```
+
+# Consulta por Nombre (Exacto):
+
+Existen dos métodos para consultar:
+
+### GET
+
+```bash
+GET https://rnc.megaplus.com.do/api/consulta/nombre?buscar=lugo & de oleo
+```
+
+### POST
+
+```bash
+POST https://rnc.megaplus.com.do/api/consulta/nombre
+{
+    "buscar": "lugo & de oleo"
+}
+```
+
+### Ejemplos con cURL
+
+### GET:
+
+```bash
+curl -X GET "https://rnc.megaplus.com.do/api/consulta/nombre?buscar=lugo"
+```
+
+### POST:
+
+```bash
+curl -X POST "https://rnc.megaplus.com.do/api/consulta/nombre" -H "Content-Type: application/json" -d '{"buscar": "lugo & de oleo"}'
+```
+
+### Ejemplo de respuesta (Éxito)
+```bash
+{
+    "error": false,
+    "codigo_http": 200,
+    "mensaje": "Consulta  Exitosa",
+    "cedula_rnc": "130-00229-2",
+    "nombre_razon_social": "LUGO & DE OLEO EIRL",
+    "nombre_comercial": "LUGO & DE OLEO",
+    "categoria": "",
+    "regimen_de_pagos": "NORMAL",
+    "estado": "ACTIVO",
+    "actividad_economica": "SERVICIOS INMOBILIARIOS REALIZADOS A CAMBIO DE UNA RETRIB. O POR CONTRATA (INCL. COMPRA, VENTA, ALQUILER, REMATE, TASACIÓN, ADM DE",
+    "administracion_local": "ADM LOCAL LA FERIA",
+    "facturador_electronico": "NO",
+    "licencias_de_comercializacion_de_vhm": "N/A",
+    "rnc_consultado": "130002292"
+}
+```
+
+# Consulta por Nombres:
+
+Existen dos métodos para consultar:
+
+### GET
+
+```bash
+GET https://rnc.megaplus.com.do/api/consulta/nombres?buscar=lugo
+```
+
+### POST
+
+```bash
+POST https://rnc.megaplus.com.do/api/consulta/nombres
+{
+    "buscar": "lugo"
+}
+```
+
+### Ejemplos con cURL
+
+### GET:
+
+```bash
+curl -X GET "https://rnc.megaplus.com.do/api/consulta/nombres?buscar=lugo"
+```
+
+### POST:
+
+```bash
+curl -X POST "https://rnc.megaplus.com.do/api/consulta/nombres" -H "Content-Type: application/json" -d '{"buscar": "lugo"}'
+```
+
+### Ejemplo de respuesta (Éxito)
+```bash
+{
+    "codigo_http": 200,
+    "error": false,
+    "info_paginacion": {
+        "pagina_actual": 1,
+        "paginas_totales": 5,
+        "total_en_esta_pagina": 7
+    },
+    "mensaje": "Consulta Exitosa",
+    "resultados": [
+        {
+            "categoria": "",
+            "cedula_rnc": "130-00229-2",
+            "estado": "ACTIVO",
+            "facturador_electronico": "NO",
+            "licencias_de_comercializacion_de_vhm": "N/A",
+            "nombre_comercial": "LUGO & DE OLEO",
+            "nombre_razon_social": "LUGO & DE OLEO EIRL",
+            "regimen_de_pagos": "NORMAL"
+        },
+        {
+            "categoria": "",
+            "cedula_rnc": "101-82861-7",
+            "estado": "SUSPENDIDO",
+            "facturador_electronico": "NO",
+            "licencias_de_comercializacion_de_vhm": "N/A",
+            "nombre_comercial": "",
+            "nombre_razon_social": "LUGO & DIAZ COBROS REALES C POR A",
+            "regimen_de_pagos": "N/D"
+        },
+        {
+            "categoria": "",
+            "cedula_rnc": "131-98667-6",
+            "estado": "ACTIVO",
+            "facturador_electronico": "NO",
+            "licencias_de_comercializacion_de_vhm": "N/A",
+            "nombre_comercial": "LUGO & MORA INVESTMENT GROUP",
+            "nombre_razon_social": "LUGO & MORA INVESTMENT GROUP SRL",
+            "regimen_de_pagos": "NORMAL"
+        },
+        {
+            "categoria": "",
+            "cedula_rnc": "118-01153-2",
+            "estado": "SUSPENDIDO",
+            "facturador_electronico": "NO",
+            "licencias_de_comercializacion_de_vhm": "N/A",
+            "nombre_comercial": "",
+            "nombre_razon_social": "LUGO ALCIBIADES SUCS",
+            "regimen_de_pagos": "N/D"
+        },
+        {
+            "categoria": "",
+            "cedula_rnc": "123-01489-9",
+            "estado": "DADO DE BAJA",
+            "facturador_electronico": "NO",
+            "licencias_de_comercializacion_de_vhm": "N/A",
+            "nombre_comercial": "",
+            "nombre_razon_social": "LUGO AUTO IMPORT C POR A",
+            "regimen_de_pagos": "N/D"
+        },
+        {
+            "categoria": "",
+            "cedula_rnc": "111-00167-6",
+            "estado": "SUSPENDIDO",
+            "facturador_electronico": "NO",
+            "licencias_de_comercializacion_de_vhm": "N/A",
+            "nombre_comercial": "",
+            "nombre_razon_social": "LUGO C POR A",
+            "regimen_de_pagos": "NORMAL"
+        },
+        {
+            "categoria": "",
+            "cedula_rnc": "101-69475-2",
+            "estado": "DADO DE BAJA",
+            "facturador_electronico": "NO",
+            "licencias_de_comercializacion_de_vhm": "N/A",
+            "nombre_comercial": "",
+            "nombre_razon_social": "LUGO COMERCIAL S A",
+            "regimen_de_pagos": "NORMAL"
+        }
+    ]
+}
+```
+
 Respuestas de Error (Formato JSON)
 ----------------------------------
 

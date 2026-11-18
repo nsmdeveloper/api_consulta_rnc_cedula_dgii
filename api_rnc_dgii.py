@@ -29,17 +29,17 @@ swagger_template = {
         "version": "1.0.0",
         "contact": {
             "name": "nsmdeveloper",
-            "url": "https://discord.gg/dfXXM42yM3",
+            "url": "http://discord.gg/dfXXM42yM3",
             "email": "nsmprogramador@gmail.com"
         },
         "license": {
             "name": "Licencia MIT",
-            "url": "https://opensource.org/licenses/MIT"
+            "url": "http://opensource.org/licenses/MIT"
         }
     },
-    "host": "rnc.megaplus.com.do",
+    "host": "localhost:5000",
     "basePath": "/",
-    "schemes": ["https"],
+    "schemes": ["http"],
     "tags": [
         {
             "name": "Consulta RNC / Cedula",
@@ -50,7 +50,7 @@ swagger_template = {
 
 swagger = Swagger(app, template=swagger_template)
 
-DGII_RNC_URL = "https://dgii.gov.do/app/WebApps/ConsultasWeb2/ConsultasWeb/consultas/rnc.aspx"
+DGII_RNC_URL = "http://dgii.gov.do/app/WebApps/ConsultasWeb2/ConsultasWeb/consultas/rnc.aspx"
 DEFAULT_TIMEOUT = 20
 
 # ---- Funciones auxiliares ----
@@ -277,20 +277,20 @@ def index():
         <p>Existen dos métodos para consultar:</p>
 
         <h3>GET</h3>
-        <pre>GET https://rnc.megaplus.com.do/api/consulta?rnc=131996035</pre>
+        <pre>GET http://localhost:5000/api/consulta?rnc=131996035</pre>
 
         <h3>POST</h3>
-        <pre>POST https://rnc.megaplus.com.do/api/consulta
+        <pre>POST http://localhost:5000/api/consulta
 {
     "rnc": "131996035"
 }</pre>
 
         <h3>Ejemplos con cURL</h3>
         <p>GET:</p>
-        <pre>curl -X GET "https://rnc.megaplus.com.do/api/consulta?rnc=131996035"</pre>
+        <pre>curl -X GET "http://localhost:5000/api/consulta?rnc=131996035"</pre>
 
         <p>POST:</p>
-        <pre>curl -X POST "https://rnc.megaplus.com.do/api/consulta" \
+        <pre>curl -X POST "http://localhost:5000/api/consulta" \
 -H "Content-Type: application/json" \
 -d '{"rnc": "131996035"}'</pre>
 
@@ -343,14 +343,14 @@ def index():
 }</pre>
 
         <h3>Documentación Interactiva</h3>
-        <p>Accede a <a href="https://rnc.megaplus.com.do/apidocs/" class="button" target="_blank">Swagger UI</a> para probar la API directamente.</p>
+        <p>Accede a <a href="http://localhost:5000/apidocs/" class="button" target="_blank">Swagger UI</a> para probar la API directamente.</p>
 
         <h3>Comunidad / Soporte</h3>
         <p>Únete a nuestro Discord para soporte y novedades:</p>
-        <p><a href="https://discord.gg/dfXXM42yM3" class="button" target="_blank">Discord</a></p>
+        <p><a href="http://discord.gg/dfXXM42yM3" class="button" target="_blank">Discord</a></p>
     </main>
     <footer>
-        &copy; 2025 <a href="https://discord.gg/dfXXM42yM3" target="_blank">nsmdeveloper</a>. Todos los derechos reservados.
+        &copy; 2025 <a href="http://discord.gg/dfXXM42yM3" target="_blank">nsmdeveloper</a>. Todos los derechos reservados.
     </footer>
 </body>
 </html>
